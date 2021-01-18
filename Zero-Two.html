@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zero-Two</title>
+</head>
+<body>
+  <div class= "img">
+    <img src="https://www.wallpapersun.com/wp-content/uploads/2020/05/zero-two-wallpaper-15-715x402.jpg" id= "imgClickAndChange" onclick="changeImage()" />
+  </div>
+    <div class= "hide">ダーリン！</div>
+  
+    
+    <style>
+  body {
+    height: 100%;
+    background-color: #FBE1E6;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    opacity: 0.5;
+    padding-top: 200px;
+  }
+
+  .img:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .img:hover + .hide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  } 
+
+</style>
+
+<script>
+  function changeImage() {
+
+if (document.getElementById("imgClickAndChange").src == "https://www.wallpapersun.com/wp-content/uploads/2020/05/zero-two-wallpaper-15-715x402.jpg") 
+{
+    document.getElementById("imgClickAndChange").src = "https://c4.wallpaperflare.com/wallpaper/197/175/638/darling-in-the-franxx-zero-two-darling-in-the-franxx-anime-anime-girls-wallpaper-preview.jpg";
+}
+else 
+{
+    document.getElementById("imgClickAndChange").src = "https://www.wallpapersun.com/wp-content/uploads/2020/05/zero-two-wallpaper-15-715x402.jpg"
+}
+}
+</script>
+
+</body>
+</html>
